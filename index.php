@@ -1,8 +1,11 @@
 <?php
-    $dict = [1,2,3,4,5];
+    
+    $list_1 = [1,2,23,4,54];
 
-    foreach ($dict as $i) {
-        $i *= 3;
-       echo "". $i .'<br>';
+    function info($list){
+        return array_sum($list);
     }
+
+    $res = info($list_1);
+    echo $res
 ?>
