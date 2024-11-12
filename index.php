@@ -1,11 +1,9 @@
 <?php
-    
-    $list_1 = [1,2,23,4,54];
+    $title = 'Главная';
+    include("blocks\\header.php");
+?>
+<h1>Главная</h1>
 
-    function info($list){
-        return array_sum($list);
-    }
-
-    $res = info($list_1);
-    echo $res
+<?php
+    require("blocks\\footer.php");
 ?>
